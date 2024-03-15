@@ -23,7 +23,7 @@ const Home = ({ username, toggleUsername, room, toggleRoom }) => {
   return (
     <div className="flex justify-center items-center  min-h-screen md:text-xl">
       <div className="w-10/12 md:w-4/12">
-        <h3 className="p-5 text-6xl">Insta Chat</h3>
+        <h3 className="p-5 text-6xl">Insta Chat👋🏼</h3>
         <div className="flex flex-col ">
           <div className="flex flex-col md:flex-row justify-around py-2 my-2 ">
             <label className="p-1 hidden md:block">Name:</label>{" "}

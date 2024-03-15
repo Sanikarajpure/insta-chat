@@ -3,7 +3,7 @@ import React from "react";
 const Message = ({ msg, username }) => {
   console.log(msg.author === username);
   return (
-    <div className={`flex py-2 relative flex-grow flex-col `}>
+    <div className={`flex py-3 relative flex-grow flex-col `}>
       <div
         className={`msgContainer w-fit rounded-lg  m-1 p-3 px-4 text-sm ${
           msg.author === username
