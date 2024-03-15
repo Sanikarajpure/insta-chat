@@ -34,6 +34,11 @@ const Home = ({ username, toggleUsername, room, toggleRoom }) => {
               onChange={(e) => {
                 handleUserName(e.target.value);
               }}
+              onKeyDown={(e) => {
+                if (e.key === "Enter" && room && username) {
+                  joinRoom();
+                }
+              }}
             ></input>
           </div>
           <div className="flex flex-col md:flex-row justify-around py-2 my-2 ">
@@ -44,6 +49,11 @@ const Home = ({ username, toggleUsername, room, toggleRoom }) => {
               placeholder="Room ID"
               onChange={(e) => {
                 handleRoom(e.target.value);
+              }}
+              onKeyDown={(e) => {
+                if (e.key === "Enter" && room && username) {
+                  joinRoom();
+                }
               }}
             ></input>
           </div>
